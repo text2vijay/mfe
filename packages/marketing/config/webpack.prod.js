@@ -13,7 +13,7 @@ const prodConfig = {
   plugins: [
     new ModuleFederationPlugin({
       name: "marketing",
-      filename: "remoteEntry.js",
+      filename: "remoteEntry.js", // this js file invalidation should be added in marketing.yml for each new build els it will take from cache new version will not be loadded.
       exposes: {
         "./MarketingApp": "./src/bootstrap",
       },
