@@ -9,7 +9,7 @@ const prodConfig = {
   mode: "production",
   output: {
     filename: "[name].[contenthash].js",
-    publicPath: "/container/latest/", //it is the file path where all the build files will store
+    publicPath: "/container/latest/", //it is the file path where all the build files will store in s3 bucket.
   },
 
   plugins: [
