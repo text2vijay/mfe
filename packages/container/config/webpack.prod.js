@@ -9,7 +9,7 @@ const prodConfig = {
   mode: "production",
   output: {
     filename: "[name].[contenthash].js",
-    publicPath: "/container/latest/", //it is the file path where all the build files will store in s3 bucket.
+    publicPath: "/container/latest/", //it is the file path where all the build files will store in s3 bucket..
   },
 
   plugins: [
@@ -17,7 +17,7 @@ const prodConfig = {
       name: "container",
       remotes: {
         marketing: `marketing@${domain}/marketing/latest/remoteEntry.js`,
-        auth: "auth@http://localhost:8082/remoteEntry.js",
+        auth: `auth@${domain}/auth/latest/remoteEntry.js`,
       },
       shared: packageJson.dependencies,
     }),
