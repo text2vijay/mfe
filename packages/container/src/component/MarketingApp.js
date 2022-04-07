@@ -19,6 +19,6 @@ export default () => {
 
     history.listen(onParentNavigate);
   }, []);
-  //useeffect need to run when marketing app render for first time
+  //useeffect need to run when marketing app render for first time.
   return <div ref={ref} />;
 };
